@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Đặt vé máy bay</title>
+    <link rel="stylesheet" href="./css/ticket-booking.css" />
+  </head>
+  <body>
+    <form class="form">
+      <div class="form-group">
+        <label for="username" class="form-label">Họ và tên</label>
+        <div>
+          <input type="text" name="username" class="form-input" id="username" />
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="id-card" class="form-label">Chứng minh thư</label>
+        <div>
+          <input type="text" name="id-card" class="form-input" id="id-card" />
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="email" class="form-label">Email</label>
+
+        <div>
+          <input type="text" name="email" class="form-input" id="email" />
+        </div>
+      </div>
+      <div class="form-group">
+        <label class="form-label">Giới tính</label>
+        <div>
+          <label for="male">Nam</label>
+          <input type="radio" name="gender" id="male" class="form-input" />
+          <label for="female">Nữ</label>
+          <input
+            type="radio"
+            name="gender"
+            id="female"
+            value="Nữ"
+            class="form-input"
+          />
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="phone" class="form-label">Số điện thoại</label>
+        <div>
+          <input type="text" name="phone" class="form-input" id="phone" />
+        </div>
+      </div>
+      <div class="form-group">
+        <label class="form-label">Chọn chuyến bay</label>
+        <div>
+          <select name="cars" id="cars">
+            <option value="volvo">Volvo</option>
+            <option value="saab">Saab</option>
+            <option value="mercedes">Mercedes</option>
+            <option value="audi">Audi</option>
+          </select>
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="birthday" class="form-label">Ngày sinh</label>
+        <div>
+          <input type="date" name="birthday" id="birthday" class="form-input" />
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="luggage" class="form-label">Hành lý</label>
+        <div>
+          <input type="text" name="luggage" class="form-input" id="luggage" />
+        </div>
+      </div>
+      <div class="form-group">
+        <label class="form-label">Hình thức thanh toán</label>
+        <div>
+          <select name="cars" id="payment">
+            <option value="volvo">Thẻ ngân hàng</option>
+            <option value="saab">Tiền mặt</option>
+          </select>
+        </div>
+      </div>
+      <div class="btn-submit">
+        <div class="btn-reset">
+          <button type="button" onclick="reset()" class="btn">Reset</button>
+        </div>
+        <div class="btn-booking">
+          <button type="button" onclick="ticketBooking()" class="btn">
+            Đặt vé
+          </button>
+        </div>
+      </div>
+    </form>
+  </body>
+
+  <script src="./js/ticket-booking.js"></script>
+</html>
